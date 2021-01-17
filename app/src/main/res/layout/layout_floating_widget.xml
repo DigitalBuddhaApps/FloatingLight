@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/luz_off"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/linterna2"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/luz_on"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/linterna1"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/d_ll_salir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/salir" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>
